@@ -2,20 +2,54 @@
 
 <form method="POST" action="/drones/{{oneDrone.id}}/edit">
 
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" name="name" value="{{oneDrone.name}}"> 
+  <div class="input-group mb-3">
+    <span
+      for="name"
+      class="input-group-text"
+      id="inputGroup-sizing-default"
+    >Name</span>
+    <input
+      name="name"
+      type="text"
+      class="form-control"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+      value="{{oneDrone.name}}"
+    />
+  </div>
 
-    <label for="propellers">Propeller:</label>
-    <input type="number" name="propellers" value="{{oneDrone.propellers}}">
+  <div class="input-group mb-3">
+    <span
+      for="propellers"
+      class="input-group-text"
+      id="inputGroup-sizing-default"
+    >Propeller</span>
+    <input
+      name="propellers"
+      type="number"
+      class="form-control"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+      value="{{oneDrone.propellers}}"
+    />
+  </div>
 
-    <label for="maxSpeed">Max Speed:</label>
-    <input type="number" name="maxSpeed" value="{{oneDrone.maxSpeed}}"> 
+  <div class="input-group mb-3">
+    <span
+      for="maxSpeed"
+      class="input-group-text"
+      id="inputGroup-sizing-default"
+    >Max Speed</span>
+    <input
+      name="maxSpeed"
+      type="number"
+      class="form-control"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+      value="{{oneDrone.maxSpeed}}"
+    />
+  </div>
 
-  <a href="/drones"><button>Actualizar Drone</button></a>
-
-   </div>
-
-
+  <a href="/drones"><button class="btn btn-outline-success">Actualizar Drone</button></a>
 
 </form>
